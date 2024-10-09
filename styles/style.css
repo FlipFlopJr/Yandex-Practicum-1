@@ -170,6 +170,13 @@
   justify-content: space-between;
 }
 
+.table__theme_dark{
+  padding-top: 80px;
+  margin-bottom: 90px;
+  /* border: 1px solid pink */
+  z-index: 2;
+}
+
 .cell {
   flex-wrap: wrap;
   width: 250px;
@@ -179,11 +186,29 @@
   /* padding-top: 60px; */
 }
 
+/* и элемента с модификатором вида ключ-значение */
+.cell__theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  /* margin-top: 80px; */
+  /* border: 1px solid pink */
+}
+
 .cell:nth-child(n + 5) {
   margin-top: 60px; /* Добавляет отступ сверху ко всем элементам, начиная с пятого */
 }
 
+.cell__theme_dark:nth-child(n + 5) {
+  margin-top: 0px; /* Добавляет отступ сверху ко всем элементам, начиная с пятого */
+}
+.cell__theme_dark:nth-child(n + 6) {
+  margin-top: 80px; /* Добавляет отступ сверху ко всем элементам, начиная с пятого */
+}
+
+
 .heading {
+  margin-top: 0;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
@@ -209,6 +234,7 @@
   justify-items: center;
   /* border: 1px solid black; */
   /* z-index: 2; */
+  margin-bottom: 0;
 }
 
 .feynman__image {
@@ -257,11 +283,78 @@
   line-height: 51px;
   font-weight: 400;
 }
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.kaufman{
+  background-color: #1f1f1f;
+  margin-top:0;
+  /* border: lightpink 1px solid; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  /* z-index: -1; */
 }
+
+.kaufman-title__theme_dark{
+  width: 60%;
+  text-align: center;
+  margin-top: 90px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  /* border: lightpink 1px solid; */
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.kaufman-subtitle__theme_dark{
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: lightpink 1px solid; */
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.kaufman-triangle{
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right:-210px;
+  z-index: 1;
+}
+
+.footer{
+  background-color: #1f1f1f;
+  display: flex;
+}
+
+.columns{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  flex-basis: 711px;
+  width: 90%;
+}
+
+.column_content_copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.column_content_info{
+
+}
+
+.column_content_social{
+
+}
+
+
+
