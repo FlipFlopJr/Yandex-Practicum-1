@@ -1,0 +1,12 @@
+.table__cell {
+    flex-wrap: wrap;
+    width: 250px;
+    /* border: 1px solid black; */
+    padding-bottom: 0;
+    margin-top: 0;
+    /* padding-top: 60px; */
+  }
+  
+  .table__cell:nth-child(n + 5) {
+    margin-top: 60px; /* Добавляет отступ сверху ко всем элементам, начиная с пятого */
+  }

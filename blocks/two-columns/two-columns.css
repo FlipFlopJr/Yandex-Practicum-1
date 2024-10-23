@@ -1,0 +1,6 @@
+.two-columns {
+    display: flex;
+    justify-content: space-between; /* Добавлено это свойство */
+    width: 100%;
+    /* border: 1px solid black; */
+  }
